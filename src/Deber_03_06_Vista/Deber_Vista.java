@@ -4,7 +4,7 @@
  */
 package Deber_03_06_Vista;
 
-import Deber_03_06_Vista.PanelPaint;
+import Deber_03_06_Vista.Deber_Panel;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -16,14 +16,14 @@ import javax.swing.JPanel;
  *
  * @author David
  */
-public class Ventanaprincipal extends javax.swing.JFrame implements ActionListener{
-    private PanelPaint panelPaint;
+public class Deber_Vista extends javax.swing.JFrame implements ActionListener{
+    private Deber_Panel panelPaint;
     /**
      * Creates new form Ventanaprincipal
      */
-    public Ventanaprincipal() {
+    public Deber_Vista() {
         initComponents();
-      this.panelPaint= new PanelPaint();
+      this.panelPaint= new Deber_Panel();
         
         
         this.jComboBox1.addItem("Estrella");
@@ -274,14 +274,18 @@ public class Ventanaprincipal extends javax.swing.JFrame implements ActionListen
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Ventanaprincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Deber_Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Ventanaprincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Deber_Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Ventanaprincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Deber_Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Ventanaprincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Deber_Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -290,7 +294,7 @@ public class Ventanaprincipal extends javax.swing.JFrame implements ActionListen
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Ventanaprincipal().setVisible(true);
+                new Deber_Vista().setVisible(true);
             }
         });
     }

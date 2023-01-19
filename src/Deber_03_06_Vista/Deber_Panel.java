@@ -15,7 +15,7 @@ import javax.swing.JPanel;
  *
  * @author David
  */
-public class PanelPaint extends JPanel implements MouseListener {
+public class Deber_Panel extends JPanel implements MouseListener {
 
     private int x1 = 0;
     private int y1 = 0;
@@ -27,7 +27,7 @@ public class PanelPaint extends JPanel implements MouseListener {
     private int dimy = 0;
     private Color colorLinea = Color.BLACK;
 
-    public PanelPaint() {
+    public Deber_Panel() {
         this.addMouseListener(this);
     }
 
