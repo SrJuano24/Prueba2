@@ -25,6 +25,8 @@ public class Practica_Prueba extends JPanel implements MouseListener {
     private int x4 = 0;
     private int y4 = 0;
     private int numclick = 0;
+    
+    private boolean x = true;
 
     public Practica_Prueba() {
         this.addMouseListener(this);
@@ -49,7 +51,15 @@ public class Practica_Prueba extends JPanel implements MouseListener {
     @Override
     public void mousePressed(MouseEvent e) {
     }
+ public void dimenciones(String e1) {
+     x=true;  
+     if(x=true){
+            super.repaint();
+         
+           
+       }
 
+    }
     @Override
     public void mouseReleased(MouseEvent e) {
 
@@ -70,20 +80,23 @@ public class Practica_Prueba extends JPanel implements MouseListener {
                     this.x3 = e.getX();
                     this.y3 = e.getY();
                     this.numclick = 3;
-                   // super.repaint();
+                    // super.repaint();
                 } else {
 
-                    if (this.numclick == 3) {
                         this.x4 = e.getX();
                         this.y4 = e.getY();
-                        this.numclick = 0;
-                        super.repaint();
-                    }
+                        this.numclick = 4;
+                     //super.repaint();
+                    
+
                 }
             }
 
         }
 
+    }
+    public void pintar (){
+          super.repaint();
     }
 
     @Override
